@@ -97,13 +97,13 @@ def main():
     else:
         pi = None
 
-    if scrollphat:
-        scrollphat.clear()
-        scrollphat.set_brightness(DISPLAY_BRIGHTNESS)
-        # fork to avoid crash in case of I2C connection issues
-        th = threading.Thread(target=render)
-        th.daemon = True
-        th.start()
+    #if scrollphat:
+    #    scrollphat.clear()
+    #   scrollphat.set_brightness(DISPLAY_BRIGHTNESS)
+    #    # fork to avoid crash in case of I2C connection issues
+    #    th = threading.Thread(target=render)
+    #    th.daemon = True
+    #    th.start()
 
     prev = None
 

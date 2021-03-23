@@ -14,7 +14,7 @@ ail_trim = stick.hat_switch(hat=0, axis=0, positions=41, initial=20)
 # Raspberry Pi GPIO pin where to output the PPM signal.
 # Pin map: http://wiki.mchobby.be/images/3/31/RASP-PIZERO-Correspondance-GPIO.jpg
 # (Connect this pin to the RC transmitter trainer port.)
-PPM_OUTPUT_PIN = 18
+PPM_OUTPUT_PIN = 4
 
 # Output (PPM) channels.
 CHANNELS = (
@@ -25,15 +25,19 @@ CHANNELS = (
     # channel 2: elevator (reversed)
     -stick.axis(1),
     # channel 3: throttle (reversed)
-    -stick.axis(2),
-    # channel 4: flight mode
+    -stick.axis(3),
+    # channel 4: yaw
+    -stick.axis(4),
+    #channal 5 ARM
+    stick.button(6),
+    # Channel 6 flight mode
     # hat up-down axis, 5 states to match scrollphat vertical resolution
     stick.hat_switch(hat=0, axis=1, positions=5),
-    # channels 5-8: buttons demo
-    stick.button(0),
+    # channels 6-8: buttons demo
+    #Chanal 7 buzzer
     stick.button(1),
-    stick.button(2),
-    stick.button(3),
+    #chanal 8
+    stick.button(7),
 )
 
 # dual-channel display component
