@@ -14,7 +14,7 @@ ail_trim = stick.hat_switch(hat=0, axis=0, positions=41, initial=20)
 # Raspberry Pi GPIO pin where to output the PPM signal.
 # Pin map: http://wiki.mchobby.be/images/3/31/RASP-PIZERO-Correspondance-GPIO.jpg
 # (Connect this pin to the RC transmitter trainer port.)
-PPM_OUTPUT_PIN = 4
+PPM_OUTPUT_PIN = 3
 
 # Output (PPM) channels.
 CHANNELS = (
