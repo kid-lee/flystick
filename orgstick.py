@@ -113,7 +113,7 @@ def main():
             pulses, pos = [], 0
             for value in _output:
                 # calibrated with Taranis to [-99.6..0..99.4]
-                us = int(round(1333 + 453 * value))
+                us = int(round(1500 + 500 * value))
                 pulses += [pigpio.pulse(0, pi_gpio, 300),
                            pigpio.pulse(pi_gpio, 0, us - 300)]
                 pos += us

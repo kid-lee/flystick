@@ -26,17 +26,17 @@ CHANNELS = (
     # channel 2: elevator (reversed)
     -stick.axis(1),
     # channel 3: throttle (reversed)
-    stick.axis(3),
+    -stick.axis(3),
     # channel 4: yaw
     stick.axis(4),
     #channal 5 ARM
     stick.button(6),
     # Channel 6 flight mode
     # hat up-down axis, 5 states to match scrollphat vertical resolution
-    stick.hat_switch(hat=0, axis=1, positions=5),
+    stick.hat_switch(hat=0, axis=1, positions=3),
     # channels 6-8: buttons demo
     #Chanal 7 buzzer
-    stick.button(1),
+    stick.hat_switch(hat=0, axis=0, positions=3),
     #chanal 8
     stick.button(7),
 )
