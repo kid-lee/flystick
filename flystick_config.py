@@ -28,7 +28,7 @@ CHANNELS = (
     # channel 3: throttle (reversed)
     -stick.axis(3),
     # channel 4: yaw
-    stick.axis(4),
+    stick.axis(2),
     #channal 5 ARM
     stick.button(6),
     # Channel 6 flight mode
