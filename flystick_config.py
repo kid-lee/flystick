@@ -19,15 +19,16 @@ PPM_OUTPUT_PIN = 4
 # Output (PPM) channels.
 CHANNELS = (
     # channel 1: aileron with trim
-    stick.axis(0) + ail_trim * 0.5,
+    #stick.axis(0) + ail_trim * 0.5,
+    stick.axis(0),
     # a more elaborate example with reverse, offset, weight and trim:
     #(-stick.axis(0) + 0.1) * 0.7 + ail_trim * 0.5,
     # channel 2: elevator (reversed)
     -stick.axis(1),
     # channel 3: throttle (reversed)
-    -stick.axis(3),
+    stick.axis(3),
     # channel 4: yaw
-    -stick.axis(4),
+    stick.axis(4),
     #channal 5 ARM
     stick.button(6),
     # Channel 6 flight mode
